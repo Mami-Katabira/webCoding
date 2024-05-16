@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta name="robots" content="noindex,nofollow" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="description" content="これはHTMLCSSの課題作品です。">
+  <link rel="icon" href="favicon.ico">
+  <!-- css -->
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <!-- script -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://rawgit.com/kimmobrunfeldt/progressbar.js/master/dist/progressbar.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.js"></script>
+  <script src="script.js"></script>
+
+  <title>ザ・メニーフェイシズ｜来日公演｜A Night at the Funny Park</title>
+</head>
+
+<body>
+  <!-- ローディング画面 -->
+  <div id="loading">
+    <div id="loading_logo">
+      <div class="img_box">
+        <img src="img/logo_manyFaces.svg" class="l_fadeUp">
+      </div>
+      <div id="progress_bar">
+        <p id="progress_text"></p>
+      </div>
+      <p id="loading_text"> Loading...</p>
+    </div>
+  </div>
+  <!-- #loading -->
+
+  <!-- スクロールダウン -->
+  <div id="scrollDown_wrap">
+    <div class="scrolldown1">
+      <span>Scroll</span>
+    </div>
+  </div><!--/#scrollDown_wrap  --> 
+
+  <main class="wrapper">
+    <!-- ヘッダー -->
+    <header id="heading_items">
+      <!-- <img src="img/logo_manyFaces.svg" alt="ロゴ" class="main_logo"> -->
+      <div id="headingText">
+        <p id="themanyfaces">THE MANY FACES</p>
+        <h1>演劇の歴史を塗り替える「ザ・メニーフェイシズ」念願の初来日公演が決定！</h1>
+        <h2>"A Night at the Funny Park"<span>待望の舞台化！</span></h2>
+      </div>
+    </header>
+
+    <!-- メニューリスト -->
+    <div id="nav_wrapper">
+      <nav id="global_nav">
+        <ul id="main_nav">
+          <li class="tab_is_active"><a href="#">HOME</a></li>
+          <li><a href="#story">STORY</a></li>
+          <li><a href="member.html">MEMBER</a></li>
+          <li><a href="venue.html">VENUE & DATE</a></li>
+          <li><a href="#">TICKET</a></li>
+          <li><a href="info.html">INFO</a></li>
+        </ul>
+      </nav>
+    </div><!-- /#nav_wrapper -->
+
+    <!-- メインコンテンツ -->
+
+      <!-- SNSリンク追従ボタン -->
+      <!-- スクロールで表示 -->
+      <div class="sns_scroll_up">
+        <div class="sns_link">
+          <a href="#"></a>
+          <ul class="sns_nav">
+            <li class="twitter"><a href="https://twitter.com/"><img src="img/twitter.svg" alt=""></a></li>
+            <li class="instagram"><a href="https://www.instagram.com/"></a><img src="img/insta.svg" alt=""></li>
+            <li class="facebook"><a href="https://www.facebook.com/"></a><img src="img/facebook.svg" alt=""></li>
+          </ul>
+        </div><!-- /.sns_link -->
+      </div>
+
+      <!-- TOPへ戻るボタン -->
+      <!-- スクロールで表示 -->
+      <div id="scroll_top">
+        <div class="back_to_top">
+          <a href="#">TOP</a>
+        </div><!-- /.back_to_top -->
+      </div>
+
+    <!-- ヒーローイメージ -->
+    <div id="hero_img">
+      <img src="img/top.jpg" alt="left_member">
+      <img src="img/story04.jpg" alt="right_member">
+    </div>
+
+    <!-- イメージ直下の概要文、日程とチケットへのリンク -->
+    <section id="info">
+      <h2 id="info_copy">待望の来日公演が実現！<br>英国発、新たな演劇ムーブメントが巻き起こる！</h2>
+      <div id="info_ticket">
+        <div class="info_ticket_date">
+          <a href="#">
+            <p>TOKYO</p>
+            <span>2022/12/28</span>
+            <p class="link_to_ticket btnshine">TICKET</p>
+          </a>
+        </div>
+        <div class="info_ticket_date">
+          <a href="#">
+            <p>NAGOYA</p>
+            <span>2022/12/29</span>
+            <p class="link_to_ticket btnshine">TICKET</p>
+          </a>
+        </div>
+        <div class="info_ticket_date">
+          <a href="#">
+            <p>OSAKA</p>
+            <span>2023/1/05</span>
+            <p class="link_to_ticket btnshine">TICKET</p>
+          </a>
+        </div>
+        <div class="info_ticket_date">
+          <a href="#">
+            <p>FUKUOKA</p>
+            <span>2023/01/08</span>
+            <p class="link_to_ticket btnshine">TICKET</p>
+          </a>
+        </div>
+      </div><!-- /#info-ticket -->
+    </section><!--/#info -->
+
+    <!-- 推薦コメント、ストーリー、ギャラリー、お問い合わせ -->
+    <div id="index_main">
+      <!-- 推薦コメント -->
+      <section id="recommend_msg">
+        <p class="rec_text">
+          観る者をライブ・ミュージアムに誘うかのような体験が繰り広げられる。<br>
+          強烈な印象！ヴィジュアル！<br>
+          世界のアートシーンで存在感が際立つザ・メニーフェイシズ。<br>
+          その最新作が国内で体感できるとは！
+        </p>
+        <p class="rec_name">蜷川幸雄&nbsp;&nbsp;/&nbsp;&nbsp;演出家・映画監督</p>
+      </section>
+
+      <!-- ストーリー -->
+      <!-- STORY大コンテナ -->
+
+      <h3 class="story_heading">STORY</h3>
+      <div class="story_content_wrapper">
+
+      <!-- ジャンプ先調整用の空div -->
+        <div id="story"></div>
+        
+        <ul class="story_arasuji">
+            <a href="#story0">
+              <li class="arasuji_each is-active">
+                    <span class="arasuji_h btnshine">
+                      序章
+                    </span>
+                    <p>それはケルトの時代</p>
+              </li>
+            </a>
+          
+            <a href="#story1">
+              <li class="arasuji_each">
+                <span class="arasuji_h btnshine">
+                  第一章
+                </span>
+                <p>対決イングランド</p>
+              </li>
+            </a>
+
+            <a href="#story2">
+              <li class="arasuji_each">
+                <span class="arasuji_h btnshine">
+                  第二章
+                </span>
+                <p>巨人の国と小人の国</p>
+              </li>
+            </a>
+
+            <a href="#story3">
+              <li class="arasuji_each">
+                <span class="arasuji_h btnshine">
+                  第三章
+                </span>
+                <p>第四の魔術</p>
+              </li>
+            </a>
+
+            <a href="#story4">
+              <li class="arasuji_each">
+                <span class="arasuji_h btnshine">
+                  最終章
+                </span>
+                <p>冒険の行着く先は</p>
+              </li>
+            </a>
+        </ul><!-- /story_arasuji tab -->
+
+
+
+          <!-- id="#story0" -->
+            <div class="story_each is-show" id="#story0" >
+              <div class="story_sub_titile">
+                <div class="caption_icon">序章</div>
+                <p class="caption_txt">振付家パパイオアヌーはギリシャ神話と自然界の威力を混交する衝撃と出会い演じることに目覚める。
+                </p>
+              </div>
+
+              <div class="story_img_sentence">
+                <img src="img/story01.jpg" alt="" class="story_img">
+                <p class="story_sentence">
+                  海で嵐に遭ったような大変な荒れようでした。手が付けられない発作の最中に、壁飾りの後ろに物音を聞き剣を抜いて「ネズミだ、ネズミだ」と叫び、衝動的に、隠れていた老人を殺しました。
+                </p>
+              </div>
+            </div> <!-- /id="#story0" -->
+
+            <!-- id="#story1" -->
+            <div class="story_each" id="#story1">
+              <div class="story_sub_titile">
+                <div class="caption_icon">第一章</div>
+                <p class="caption_txt">ガートルード、さあ、奥へ行こう。
+                  日が昇ったらすぐにハムレットを船に乗せて送り出してやる！
+                </p>
+              </div>
+
+              <div class="story_img_sentence">
+                <img src="img/story02.jpg" alt="" class="story_img">
+                <p class="story_sentence">
+                  ハムレットの勝手気ままな振る舞いは、みんなにとって脅威だ。おまえにも、余にも、誰にとっても。ああ、この残酷な所業をどのように公表したらいいだろう。
+                </p>
+              </div>
+            </div> <!-- /id="#story1" -->
+
+            <!-- id="#story2" -->
+            <div class="story_each" id="#story2">
+              <div class="story_sub_titile">
+                <div class="caption_icon">第二章</div>
+                <p class="caption_txt">騒がしいな、おれを呼んでいる。
+                  こっちへ来るぞ！
+                </p>
+              </div>
+
+              <div class="story_img_sentence">
+                <img src="img/story03.jpg" alt="" class="story_img">
+                <p class="story_sentence">
+                  おまえの秘密をばらしてやると言っているのさ、おれの秘密じゃないぞ。それにズポンジに尋問されるなんて。そんなものに王の息子が答えられると思っているのか。
+                </p>
+              </div>
+            </div> <!-- /id="#story2" -->
+
+            <!-- id="#story3" -->
+            <div class="story_each" id="#story3">
+              <div class="story_sub_titile">
+                <div class="caption_icon">第三章</div>
+                <p class="caption_txt">騒がしいな、おれを呼んでいる。
+                  こっちへ来るぞ！
+                </p>
+              </div>
+
+              <div class="story_img_sentence">
+                <img src="img/story04.jpg" alt="" class="story_img">
+                <p class="story_sentence">
+                  おまえの秘密をばらしてやると言っているのさ、おれの秘密じゃないぞ。それにズポンジに尋問されるなんて。そんなものに王の息子が答えられると思っているのか。
+                </p>
+              </div>
+            </div> <!-- /id="#story3" -->
+
+
+            <!-- id="#story4" -->
+            <div class="story_each" id="#story4">
+              <div class="story_sub_titile">
+                <div class="caption_icon">最終章</div>
+                <p class="caption_txt">騒がしいな、おれを呼んでいる。
+                  こっちへ来るぞ！
+                </p>
+              </div>
+
+              <div class="story_img_sentence">
+                <img src="img/story01.jpg" alt="" class="story_img">
+                <p class="story_sentence">
+                  おまえの秘密をばらしてやると言っているのさ、おれの秘密じゃないぞ。それにズポンジに尋問されるなんて。そんなものに王の息子が答えられると思っているのか。
+                </p>
+              </div>
+            </div> <!-- /id="#story4" -->
+
+              
+
+            <div class="story_msg">
+              <p>続きは劇場で！</p>
+            </div><!-- /.story_msg -->
+      </div><!-- /.story_content_wrapper -->
+
+
+      <!-- ギャラリー -->
+      <h3 class="section_titile">GALLERY</h3>
+
+      <section class="gallery_wrapper">
+        <!-- 画像カルーセル slick適用 -->
+        <div class="slick-wrap">
+            <div class="sliderArea">
+              <div class="slider_thumb slider">
+                <div><img src="img/img01.jpg"></div>
+                <div><img src="img/img02.jpg"></div>
+                <div><img src="img/img03.jpg"></div>
+                <div><img src="img/img04.jpg"></div>
+                <div><img src="img/img05.jpg"></div>
+                <div><img src="img/img06.jpg"></div>
+              </div><!-- /.slider_thumb slider -->
+
+              <div class="thumb">
+                <div><img src="img/img01_thumb.jpg"></div>
+                <div><img src="img/img02_thumb.jpg"></div>
+                <div><img src="img/img03_thumb.jpg"></div>
+                <div><img src="img/img04_thumb.jpg"></div>
+                <div><img src="img/img05_thumb.jpg"></div>
+                <div><img src="img/img06_thumb.jpg"></div>
+              </div><!-- /.thumb -->
+            </div><!-- /.sliderArea -->
+          </div> <!-- /.slick-wrap -->
+         
+          <!-- YOUTUBE埋め込み -->
+            <!-- <div class="youtube">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/Kq8zqhqjUIo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div> -->
+
+        <div class="last_msg">
+          <p>世界各地で大きな反響を呼んでいる待望の新作にどうぞご期待ください。</p>
+        </div><!-- /.last_msg -->
+
+      </section><!-- /.gallery_wrapper -->
+
+      <div class="last_ticket_title">
+        チケット購入
+      </div>
+
+      <section id="last_info">
+        <div id="last_info_ticket">
+            <div class="info_ticket_date">
+              <a href="#">
+                <p>TOKYO</p>
+                <span>2022/12/28</span>
+                <p class="link_to_ticket btnshine">TICKET</p>
+              </a>
+            </div>
+            <div class="info_ticket_date">
+              <a href="#">
+                <p>NAGOYA</p>
+                <span>2022/12/29</span>
+                <p class="link_to_ticket btnshine">TICKET</p>
+              </a>
+            </div>
+            <div class="info_ticket_date">
+              <a href="#">
+                <p>OSAKA</p>
+                <span>2023/1/05</span>
+                <p class="link_to_ticket btnshine">TICKET</p>
+              </a>
+            </div>
+            <div class="info_ticket_date">
+              <a href="#">
+                <p>FUKUOKA</p>
+                <span>2023/1/08</span>
+                <p class="link_to_ticket btnshine">TICKET</p>
+              </a>
+            </div>
+        </div><!-- /#info-ticket -->
+      </section><!--/#info -->
+
+      <!-- お問い合わせ -->
+      <div>
+        <div class="contact_wrapper">
+          <h3>CONTACT</h3>
+
+          <div class="form_wrapper">
+            <p class="contact_msg">公演についてのお問い合わせはこちらまでご連絡をお願いいたします。</p>
+            <form action="#">
+              <div>
+                <label for="name">お名前</label>
+                <input type="text" id="name" name="your-name">
+              </div>
+              <div>
+                <label for="email">メールアドレス</label>
+                <input type="email" id="email" name="your-email">
+              </div>
+              <div>
+                <label for="message">メッセージ</label>
+                <textarea id="message" name="your-message"></textarea>
+              </div>
+
+              <input type="submit" class="button" value="送信">
+            </form>
+          </div><!-- /.form_wrapper -->
+        </div><!-- /.contact_wrapper -->
+      </div>
+    </div><!-- /#index_main -->
+  </main><!-- /.wrapper -->
+
+  <footer>
+    <div class="footer_wrapper">
+
+        <div class="footer_info">
+          <div class="company_mark">
+            <img src="img/company_logo01.png" alt="シアターOMG社ロゴマーク">
+            <p class="company_name">TEATRE OMG</p>
+          </div>
+          <div class="company_mark">
+            <img src="img/company_logo02.png" alt="JS株式会社ロゴマーク">
+            <p class="company_name">JS inc.</p>
+          </div>
+          <p>Copyright© katabira inc. All Rights Reserved</p>
+          <p><a href="#">プライバシーポリシー</a></p>
+          <p><a href="#">運営会社</a></p>
+        </div><!-- /.footer_info -->
+
+    </div><!-- /.footer_wrapper -->
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
